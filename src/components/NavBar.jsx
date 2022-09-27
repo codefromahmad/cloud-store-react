@@ -69,7 +69,7 @@ const NavBar = () => {
           />
         )}
         {nav && (
-          <div className="z-10 absolute top-20 right-0 w-full bg-zinc-300">
+          <div className="absolute z-99 top-20 right-0 w-full bg-zinc-300">
             <ul className="flex flex-col items-center w-full justify-center">
               {links.map(({ id, name, link }) => (
                 <li

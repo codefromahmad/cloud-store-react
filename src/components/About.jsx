@@ -19,17 +19,22 @@ const About = () => {
     },
   ];
   return (
-    <div className="">
-      <div className="w-full py-10 max-w-screen-lg mx-auto">
-        <p className="text-3xl font-bold text-center">
-          Trusted by Developers across the world
-        </p>
-        <p className="py-3 text-gray-500">
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it
-          to make a type specimen book.
-        </p>
-        <div className="grid"></div>
+    <div className="w-full py-16 max-w-screen-lg mx-auto">
+      <p className="text-3xl font-bold text-center">
+        Trusted by Developers across the world
+      </p>
+      <p className="py-6 text-gray-500 mx-6 text-center font-semibold">
+        Lorem Ipsum has been the industry's standard dummy text ever since the
+        1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book.
+      </p>
+      <div className="grid grid-cols-3 gap-4 mx-6 sm:grid-flow-row grid-flow-col">
+        {blocks.map(({ id, num, text }) => (
+          <div key={id} className="shadow-lg py-6 rounded-xl shadow-gray-400">
+            <p className="text-center text-4xl md:text-6xl">{num}</p>
+            <p className="text-center">{text}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
