@@ -20,7 +20,7 @@ const About = () => {
   ];
   return (
     <div className="w-full py-16 max-w-screen-lg mx-auto">
-      <p className="text-3xl font-bold text-center">
+      <p className="text-3xl mx-6 font-bold text-center">
         Trusted by Developers across the world
       </p>
       <p className="py-6 text-gray-500 mx-6 text-center font-semibold">
@@ -28,7 +28,7 @@ const About = () => {
         1500s, when an unknown printer took a galley of type and scrambled it to
         make a type specimen book.
       </p>
-      <div className="grid grid-cols-3 gap-4 mx-6 sm:grid-flow-row grid-flow-col">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mx-6">
         {blocks.map(({ id, num, text }) => (
           <div key={id} className="shadow-lg py-6 rounded-xl shadow-gray-400">
             <p className="text-center text-4xl md:text-6xl">{num}</p>
