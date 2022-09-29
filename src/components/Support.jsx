@@ -31,12 +31,11 @@ const Support = () => {
     },
   ];
   return (
-    <div className="h-[700px]">
-      <div className="w-full h-[700px] absolute bg-gray-900/90">
+    <div className="w-full">
+      <div className="w-full h-[400px] absolute bg-gray-900/90">
         <img
           src={support}
-          alt=""
-          className="w-full mix-blend-overlay h-full object-cover"
+          className="w-full h-full mix-blend-overlay object-cover"
         />
       </div>
       <div className="w-full max-w-screen-lg mx-auto py-8 text-white relative">
@@ -52,11 +51,11 @@ const Support = () => {
           to make a type specimen book.
         </p>
       </div>
-      <div className="grid grid-cols-1 shadow-xl md:grid-cols-3 mx-5 sm:mx-10 gap-4 py-8 max-w-screen-lg lg:mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 mx-5 sm:mx-10 gap-4 py-8 max-w-screen-lg lg:mx-auto">
         {cards.map(({ id, title, icon, text }) => (
           <div
             key={id}
-            className="bg-white my-6 md:my-0 drop-shadow-md rounded-lg relative"
+            className="bg-white my-6 md:my-0 shadow-2xl rounded-lg relative"
           >
             <div className="rounded-md mx-4 -mt-7 bg-blue-700 w-12 h-12  flex justify-center items-center">
               {icon}
@@ -65,7 +64,7 @@ const Support = () => {
               <p className="text-xl mx-4 pt-4 font-bold">{title}</p>
               <p className="mx-4 py-3">{text}</p>
             </div>
-            <div className="group flex px-4 py-2 rounded-b-md bg-slate-200 cursor-pointer items-center">
+            <div className="group flex px-4 py-2 rounded-b-md bg-slate-200 hover:bg-slate-300 cursor-pointer items-center">
               <p className="font-bold">Contact Us</p>
               <BsArrowRightShort
                 size={30}
