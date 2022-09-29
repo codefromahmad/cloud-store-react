@@ -38,8 +38,8 @@ const Support = () => {
           className="w-full h-full mix-blend-overlay object-cover"
         />
       </div>
-      <div className="w-full max-w-screen-lg mx-auto py-8 text-white relative">
-        <p className="text-3xl font-bold mx-6 text-slate-300 text-center">
+      <div className="w-full max-w-[990px] mx-auto py-8 text-white relative">
+        <p className="text-3xl font-bold mx-6 text-slate-300 text-center uppercase">
           Support
         </p>
         <p className="text-3xl font-bold mx-6 py-6 text-center">
@@ -51,7 +51,7 @@ const Support = () => {
           to make a type specimen book.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 mx-5 sm:mx-10 gap-4 py-8 max-w-screen-lg lg:mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 mx-5 sm:mx-10 gap-4 py-8 max-w-[990px] lg:mx-auto">
         {cards.map(({ id, title, icon, text }) => (
           <div
             key={id}
