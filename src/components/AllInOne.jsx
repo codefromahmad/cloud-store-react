@@ -74,7 +74,10 @@ const AllInOne = () => {
         </div>
         <div className="grid grid-cols-1 mx-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:mx-6 gap-5 py-6">
           {notifications.map(({ id, title, text }) => (
-            <div key={id}>
+            <div
+              key={id}
+              className="p-2 rounded-md bg-slate-200 drop-shadow-lg"
+            >
               <div className="flex items-center">
                 <BsCheck2 size={22} className="text-green-500" />
                 <p className="font-bold px-2">{title}</p>
