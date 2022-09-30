@@ -61,7 +61,7 @@ const Pricing = () => {
     },
   ];
   return (
-    <div className="w-full">
+    <div name="pricing" className="w-full">
       <div className="w-full h-[550px] absolute mix-blend-overlay bg-gray-900/90"></div>
       <div className="w-full max-w-screen-lg mx-auto py-8 text-white relative">
         <p className="text-3xl font-bold mx-6 text-slate-300 text-center uppercase">

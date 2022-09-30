@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -8,27 +9,22 @@ const NavBar = () => {
     {
       id: 1,
       name: "home",
-      link: "home",
     },
     {
       id: 2,
       name: "about",
-      link: "about",
     },
     {
       id: 3,
       name: "support",
-      link: "support",
     },
     {
       id: 4,
-      name: "platforms",
-      link: "platforms",
+      name: "platform",
     },
     {
       id: 5,
       name: "pricing",
-      link: "pricing",
     },
   ];
   return (
@@ -42,7 +38,9 @@ const NavBar = () => {
                 key={id}
                 className="mx-3 hover:mx-[10px] capitalize cursor-pointer hover:scale-102 duration-200 hover:font-bold"
               >
-                <a href="#">{name}</a>
+                <Link to={name} smooth={name}>
+                  {name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -76,7 +74,9 @@ const NavBar = () => {
                   key={id}
                   className="capitalize text-3xl py-3 cursor-pointer hover:scale-102 duration-200 hover:font-bold"
                 >
-                  <a href="#">{name}</a>
+                  <Link onClick={() => setNav(!nav)} to={name} smooth={name}>
+                    {name}
+                  </Link>
                 </li>
               ))}
               <li className="border-t-2 border-zinc-400 py-3">

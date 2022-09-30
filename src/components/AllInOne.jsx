@@ -61,7 +61,7 @@ const AllInOne = () => {
     },
   ];
   return (
-    <div className="w-full py-10">
+    <div name="platform" className="w-full py-10">
       <div className="max-w-screen-lg mx-auto">
         <div>
           <p className="mx-6 text-center text-3xl font-bold">

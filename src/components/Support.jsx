@@ -31,7 +31,7 @@ const Support = () => {
     },
   ];
   return (
-    <div className="w-full">
+    <div name="support" className="w-full">
       <div className="w-full h-[400px] absolute bg-gray-900/90">
         <img
           src={support}
