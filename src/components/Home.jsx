@@ -28,7 +28,7 @@ const Home = () => {
           </div>
         </div>
         <div className="pt-12 w-4/5 sm:w-1/2 sm:pt-0">
-          <img src={heroImage} />
+          <img src={heroImage} alt="hero image" />
         </div>
       </div>
       <Widget />

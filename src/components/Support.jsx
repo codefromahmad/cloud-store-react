@@ -35,6 +35,7 @@ const Support = () => {
       <div className="w-full h-[400px] absolute bg-gray-900/90">
         <img
           src={support}
+          alt="support"
           className="w-full h-full mix-blend-overlay object-cover"
         />
       </div>
