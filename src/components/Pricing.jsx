@@ -61,7 +61,7 @@ const Pricing = () => {
     },
   ];
   return (
-    <div name="pricing" className="w-full">
+    <div name="pricing" className="w-full py-20">
       <div className="w-full h-[550px] absolute mix-blend-overlay bg-gray-900/90"></div>
       <div className="w-full max-w-screen-lg mx-auto py-8 text-white relative">
         <p className="text-3xl font-bold mx-6 text-slate-300 text-center uppercase">
@@ -94,7 +94,7 @@ const Pricing = () => {
               </div>
             ))}
             <div>
-              <button className="bg-gray-900 text-white rounded-md w-full py-2 hover:bg-gray-800">
+              <button className="bg-gray-900 hover:bg-white hover:text-gray-900 hover:border-[1px] border-gray-900 text-white rounded-md w-full py-2">
                 Get Started
               </button>
             </div>

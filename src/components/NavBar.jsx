@@ -68,34 +68,26 @@ const NavBar = () => {
         )}
         {nav && (
           <div className="absolute z-99 top-20 right-0 w-full bg-zinc-300">
-            <ul className="flex flex-col items-center w-full justify-center">
+            <ul className="flex flex-col w-full justify-center">
               {links.map(({ id, name, link }) => (
                 <li
                   key={id}
-                  className="capitalize text-3xl py-3 cursor-pointer hover:scale-102 duration-200 hover:font-bold"
+                  className="capitalize mx-5 py-4 cursor-pointer border-b-[1px] border-slate-400 hover:scale-102 duration-200 hover:font-bold"
                 >
                   <Link onClick={() => setNav(!nav)} to={name} smooth={name}>
                     {name}
                   </Link>
                 </li>
               ))}
-              <li className="border-t-2 border-zinc-400 py-3">
-                <a
-                  href="#"
-                  className="capitalize text-3xl cursor-pointer hover:scale-102 duration-200 hover:font-bold"
-                >
-                  Sign in
-                </a>
-              </li>
-              <li className="py-3">
-                <a
-                  href="#"
-                  className="capitalize text-3xl cursor-pointer hover:scale-102 duration-200 hover:font-bold"
-                >
-                  Sign up
-                </a>
-              </li>
             </ul>
+            <div className="flex flex-col py-2 mx-4">
+              <button className="py-2 my-1 border-slate-500 border-[1px] rounded-md">
+                Sign in
+              </button>
+              <button className="bg-blue-500 hover:opacity-80 my-1 text-white py-2 px-5 rounded-md">
+                Sign up
+              </button>
+            </div>
           </div>
         )}
       </div>

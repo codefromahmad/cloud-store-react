@@ -14,12 +14,14 @@ const Home = () => {
           <p className="text-4xl font-bold sm:text-5xl md:text-6xl py-4 text-center sm:text-left">
             Cloud Management
           </p>
-          <p className="text-center sm:text-left">This is our Tech Brand</p>
-          <div className="flex justify-center sm:block">
+          <p className="text-center py-2 sm:text-left">
+            This is our Tech Brand
+          </p>
+          <div className="flex justify-center sm:block my-2">
             <Link
               to="pricing"
               smooth="pricing"
-              className="bg-blue-500 hover:opacity-80 text-white rounded-md my-2 px-16 py-1.5"
+              className="bg-blue-500 hover:opacity-80 text-white rounded-md px-16 py-1.5"
             >
               Get Started
             </Link>

@@ -19,7 +19,7 @@ const About = () => {
     },
   ];
   return (
-    <div name="about" className="w-full py-16 max-w-screen-lg mx-auto">
+    <div name="about" className="w-full sm:pt-32 max-w-screen-lg mx-auto pt-28">
       <p className="text-3xl mx-6 font-bold text-center">
         Trusted by Developers across the world
       </p>
