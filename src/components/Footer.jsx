@@ -1,4 +1,5 @@
 import React from "react";
+import SocialLinks from "./SocialLinks";
 
 const Footer = () => {
   const links = [
@@ -100,7 +101,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="w-full bg-gray-900 text-slate-200 py-10">
+    <div className="w-full bg-gray-900 text-slate-200 py-5">
       <div className="flex flex-col md:flex-row text-center sm:text-left max-w-[950px] md:mx-auto">
         <div className="lg:w-3/5 w-full">
           <div className="flex justify-between text-xs sm:text-sm px-4">
@@ -135,6 +136,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <SocialLinks />
     </div>
   );
 };
