@@ -1,5 +1,6 @@
 import About from "./components/About";
 import AllInOne from "./components/AllInOne";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Pricing from "./components/Pricing";
@@ -14,6 +15,7 @@ function App() {
       <Support />
       <AllInOne />
       <Pricing />
+      <Footer />
     </div>
   );
 }
