@@ -111,7 +111,7 @@ const Footer = () => {
                 {childs.map(({ id, text }) => (
                   <ul key={id}>
                     <li className="py-1">
-                      <a href="#">{text}</a>
+                      <a href="https://google.com">{text}</a>
                     </li>
                   </ul>
                 ))}
